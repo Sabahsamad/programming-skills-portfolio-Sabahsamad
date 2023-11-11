@@ -1,0 +1,8 @@
+name =input("enter name: ")
+print (name)
+name1=input("Enter University Name:")
+print(name1)
+age=input("Enter your age:")
+print(age)
+hobby=input("My favourite hobby is:")
+print(hobby)
