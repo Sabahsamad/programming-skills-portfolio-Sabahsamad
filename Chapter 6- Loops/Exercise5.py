@@ -1,12 +1,19 @@
-'''Make a list called sandwich_orders and fill it with the names of various sandwiches. Then make an empty list called finished_sandwiches.
+'''Using the list sandwich_orders from Exercise 7-8, make sure the sandwich 'pastrami' appears in the list at least three times. Add code
 
-Loop through the list of sandwich orders and print a message for each order, such as I made your tuna sandwich. As each sandwich is made, 
+near the beginning of your program to print a message saying the deli has run out of pastrami, and then use a while loop to remove all 
 
-move it to the list of finished sandwiches. After all the sandwiches have been made, print a message listing each sandwich that was made.'''
+occurrences of 'pastrami' from sandwich_orders. Make sure no pastrami sandwiches end up in finished_sandwiches.'''
 
-sandwich_orders = ['lettuce', 'ketchup', 'chicken patty', 'tomato']
+sandwich_orders = [
+    'pastrami', 'beef', 'veg', 'pastrami',
+    'chicken patty', 'tomato', 'pastrami']
 finished_sandwiches = []
 
+print("I'm sorry, we're all out of pastrami today.")
+while 'pastrami' in sandwich_orders:
+    sandwich_orders.remove('pastrami')
+
+print("\n")
 while sandwich_orders:
     current_sandwich = sandwich_orders.pop()
     print("I'm working on your " + current_sandwich + " sandwich.")
